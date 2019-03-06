@@ -24,7 +24,6 @@ function validate(target, attribute) {
   const regex = patterns[attribute];
   const value = target.value;
 
-  console.log(value);
   if (regex.test(value, regex)) {
     target.classList.remove("invalid");
     target.classList.add("valid");
